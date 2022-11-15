@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container {
   max-width: 1145px;
   margin: 0 auto;
 }
 
 /* Стилизация social ссылок */
+.social__link {
+  font-family: 'Inter', sans-serif;
+  transition: opacity 0.3s ease-in-out;
+  color: #000000;
+  z-index: 10;
+}
+.social__link:hover {
+  filter: opacity(50%);
+}
+
 .inst {
   transition: fill 0.3s ease-in-out;
 }
@@ -25,6 +39,25 @@
   fill: #08c;
 }
 /* Конец стилизации social ссылок */
+
+/* Стилизация блока btn */
+
+.btn {
+  border: 3px solid #000000;
+  padding: 25px 110px;
+  text-decoration: none;
+  color: #313131;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  background-color: aliceblue;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -37,6 +70,7 @@
 .woman {
   position: absolute;
   top: 100px;
+  z-index: 0;
 }
 
 .woman__left {
@@ -56,8 +90,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .header__socials .social__link:not(:last-child) {
   margin-right: 15px;
+}
+
+/* Sale */
+.sale {
+  max-width: 1150px;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 65px 10px;
+}
+
+.sale__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+  color: #f59baf;
+  margin-bottom: 10px;
+}
+
+.sale__description {
+  color: #666666;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+  max-width: 760px;
+  margin: 0 auto 50px auto;
 }
