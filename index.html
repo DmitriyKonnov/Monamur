@@ -77,7 +77,10 @@
         <section class="catalog container">
           <h2 class="catalog__title">Колличество ограничено!</h2>
           <div class="item catalog__item">
-            <img class="item__img" src="img/woman1.png" alt="" />
+            <picture>
+              <source srcset="img/woman1mobile.png" media="(max-width: 376px)" />
+              <img class="item__img" src="img/woman1.png" alt="" />
+            </picture>
             <div class="item__info">
               <h3 class="item__title">ТРЕНЧ "ЧИКАГО" ПЕСОЧНЫЙ+МЯТА</h3>
               <div class="item__text">
@@ -92,7 +95,10 @@
             </div>
           </div>
           <div class="item catalog__item">
-            <img class="item__img" src="img/woman2.png" alt="" />
+            <picture>
+              <source srcset="img/woman2mobile.png" media="(max-width: 376px)" />
+              <img class="item__img" src="img/woman2.png" alt="" />
+            </picture>
             <div class="item__info">
               <h3 class="item__title">БРЮКИ "ТИНА" КОЖАНЫЕ КОРИЧНЕВЫЙ</h3>
               <div class="item__text">
@@ -107,7 +113,10 @@
             </div>
           </div>
           <div class="item catalog__item">
-            <img class="item__img" src="img/woman3.png" alt="" />
+            <picture>
+              <source srcset="img/woman3mobile.png" media="(max-width: 376px)" />
+              <img class="item__img" src="img/woman3.png" alt="" />
+            </picture>
             <div class="item__info">
               <h3 class="item__title">ЮБКА "МЕЛИНА" КОЖА ЧЕРНЫЙ</h3>
               <div class="item__text">
@@ -147,15 +156,17 @@
       <footer class="footer">
         <div class="container footer__container">
           <img src="img/logo.png" alt="" class="footer__logo" width="125px" height="100px" />
-          <a href="" class="footer__link">
-            <img src="img/email.png" alt="" class="link__img" />
-            sales@monamourplus.ru
-          </a>
-          <a href="" class="footer__link">
-            <img src="img/phone-call.png" alt="" class="link__img" />
-            +7 495 128-18-71
-          </a>
-          <a href="" class="footer__link"> monamourplus.ru </a>
+          <div class="footer__block-links">
+            <a href="" class="footer__link">
+              <img src="img/email.png" alt="" class="link__img" />
+              sales@monamourplus.ru
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/phone-call.png" alt="" class="link__img" />
+              +7 495 128-18-71
+            </a>
+            <a href="" class="footer__link"> monamourplus.ru </a>
+          </div>
           <div class="footer__item footer__social social">
             <a href="" class="social__link">
               <img src="img/inst.svg" alt="" class="social__img"
