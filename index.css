@@ -259,6 +259,14 @@ body {
   margin-right: 5px;
 }
 
+.footer__social {
+  display: flex;
+}
+
+.social__link-footer {
+  display: block;
+}
+
 /* media */
 
 @media (max-width: 376px) {
